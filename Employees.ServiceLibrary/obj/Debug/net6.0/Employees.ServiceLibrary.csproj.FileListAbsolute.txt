@@ -1,0 +1,12 @@
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\bin\Debug\net6.0\Employees.ServiceLibrary.deps.json
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\bin\Debug\net6.0\Employees.ServiceLibrary.dll
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\bin\Debug\net6.0\Employees.ServiceLibrary.pdb
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\Employees.ServiceLibrary.csproj.AssemblyReference.cache
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\Employees.ServiceLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\Employees.ServiceLibrary.AssemblyInfoInputs.cache
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\Employees.ServiceLibrary.AssemblyInfo.cs
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\Employees.ServiceLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\Employees.ServiceLibrary.dll
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\refint\Employees.ServiceLibrary.dll
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\Employees.ServiceLibrary.pdb
+C:\Users\Nikola\OneDrive - Drees & Sommer SE\Desktop\EmployeesWebApp\Employees\Employees.ServiceLibrary\obj\Debug\net6.0\ref\Employees.ServiceLibrary.dll
