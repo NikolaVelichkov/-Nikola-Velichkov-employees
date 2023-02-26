@@ -22,17 +22,10 @@
         </Grid.RowDefinitions>
         <DataGrid Name="MostWorkedDaysDataGrid" Grid.Column="1" Grid.Row="0" ColumnWidth="*">
             <DataGrid.Columns>
-                <!--<DataGridTextColumn Width="*" x:Name="FirstEmployee" Header="Employee ID #1"/>
-                <DataGridTextColumn Width="*" x:Name="SecondEmployee" Header="Employee ID #2"/>
-                <DataGridCheckBoxColumn Width="*" x:Name="DaysWorkedSum" Header="Days worked"/>-->
             </DataGrid.Columns>
         </DataGrid>
         <DataGrid Name="EmployeesDataGrid" Grid.Column="1" Grid.Row="2" ColumnWidth="*">
             <DataGrid.Columns>
-                <!--<DataGridTextColumn Width="*" x:Name="FirstEmployeeID" Header="Employee ID #1"/>
-                <DataGridTextColumn Width="*" x:Name="SecondEmployeeID" Header="Employee ID #2"/>
-                <DataGridHyperlinkColumn Width="*" x:Name="ProjectID" Header="Project ID"/>
-                <DataGridCheckBoxColumn Width="*" x:Name="DaysWorked" Header="Days worked"/>-->
             </DataGrid.Columns>
         </DataGrid>
         <Button Grid.Column="1" Grid.Row="4" Height="50" Width="100" Click="Compose">Upload</Button>

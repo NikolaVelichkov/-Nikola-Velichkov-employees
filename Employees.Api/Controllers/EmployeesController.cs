@@ -23,7 +23,7 @@ namespace Employees.Api.Controllers
             MaxDaysEntity maxDaysEntity = await _employeerepository.GetMostworkedPair();
             if (maxDaysEntity is null)
             {
-                return BadRequest();
+                return NotFound();
             }
             return Ok(maxDaysEntity);
         }
@@ -34,7 +34,7 @@ namespace Employees.Api.Controllers
             List<CommonProjectEntity>? CommonProjectPairs = await _employeerepository.GetCommonProjectPairs();
             if (CommonProjectPairs is null)
             {
-                return BadRequest();
+                return NotFound();
             }
             return Ok(CommonProjectPairs);
         }
