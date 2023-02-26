@@ -5,7 +5,7 @@ namespace Employees.ServiceLibrary.Repositories.Contracts
 {
     public interface IEmployeeRepository
     {
-        Task<bool> ReadCsvValue(IFormFile formFile);
+        Task<bool> ReadCsvValue(Stream fileStream);
         Task<MaxDaysEntity?> GetMostworkedPair();
         Task<List<CommonProjectEntity>?> GetCommonProjectPairs();
     }

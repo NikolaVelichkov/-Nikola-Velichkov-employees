@@ -22,11 +22,11 @@ namespace Employees.ServiceLibrary.Repositories
             _fileParserBase = fileParserBase;
             _commonProject = commonProject;
         }
-        public Task<bool> ReadCsvValue(IFormFile formFile)
+        public Task<bool> ReadCsvValue(Stream fileStream)
         {
             try
             {
-                string[] listOfLines = _fileParserBase.ReadValue(formFile);
+                string[] listOfLines = _fileParserBase.ReadValue(fileStream);
                 EmployeesDbContext.EmployeeEntities = _fileParserBase.ParseValue(listOfLines);
             }
             catch

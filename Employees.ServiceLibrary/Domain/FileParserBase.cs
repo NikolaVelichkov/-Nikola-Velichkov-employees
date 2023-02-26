@@ -11,7 +11,7 @@ namespace Employees.ServiceLibrary.Domain
 {
     public abstract class FileParserBase : IFileParserBase
     {       
-        abstract public string[] ReadValue(IFormFile formFile);
+        abstract public string[] ReadValue(Stream fileStream);
         abstract public List<EmployeeEntity> ParseValue(string[] lines);
     }
 
