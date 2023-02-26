@@ -6,6 +6,6 @@ namespace Employees.ServiceLibrary.Domain.Contracts
     public interface IFileParserBase
     {
         public List<EmployeeEntity> ParseValue(string[] lines);
-        string[] ReadValue(IFormFile formFile);
+        string[] ReadValue(Stream fileStream);
     }
 }

@@ -20,9 +20,9 @@ namespace Employees.ServiceLibrary.Domain
             return values;
         }
 
-        public override string[] ReadValue(IFormFile formFile)
+        public override string[] ReadValue(Stream fileStream)
         {
-            using (var reader = new StreamReader(formFile.OpenReadStream()))
+            using (var reader = new StreamReader(fileStream))
             {
                 List<string> lines = new List<string>();
 

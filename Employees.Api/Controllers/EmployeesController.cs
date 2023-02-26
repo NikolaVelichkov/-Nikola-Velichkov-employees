@@ -42,7 +42,7 @@ namespace Employees.Api.Controllers
         [HttpPost("UploadFile")]
         public async Task<IActionResult> UploadFileAsync(IFormFile formFile)
         {          
-            if (await _employeerepository.ReadCsvValue(formFile))
+            if (await _employeerepository.ReadCsvValue(formFile.OpenReadStream()))
             {
                 return Ok(formFile);
 
