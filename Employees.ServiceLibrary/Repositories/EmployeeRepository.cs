@@ -15,12 +15,12 @@ namespace Employees.ServiceLibrary.Repositories
     public class EmployeeRepository : IEmployeeRepository
     {
         private readonly IFileParserBase _fileParserBase;
-        private readonly IEmployeeManager _commonProject;
+        private readonly IEmployeeManager _employeeManager;
         private EmployeesDbContext EmployeesDbContext = new EmployeesDbContext();
-        public EmployeeRepository(IFileParserBase fileParserBase, IEmployeeManager commonProject)
+        public EmployeeRepository(IFileParserBase fileParserBase, IEmployeeManager employeeManager)
         {
             _fileParserBase = fileParserBase;
-            _commonProject = commonProject;
+            _employeeManager = employeeManager;
         }
         public Task<bool> ReadCsvValue(Stream fileStream)
         {
@@ -40,15 +40,15 @@ namespace Employees.ServiceLibrary.Repositories
 
         public Task<MaxDaysEntity?> GetMostworkedPair()
         {
-            EmployeesDbContext.CommonProjectEntities = _commonProject.GetLongestWorkingEmployeePairs(EmployeesDbContext.EmployeeEntities);
-            EmployeesDbContext.maxDaysEntity = _commonProject.FindPairWithLogestWorkTime(EmployeesDbContext.CommonProjectEntities);
+            EmployeesDbContext.CommonProjectEntities = _employeeManager.GetLongestWorkingEmployeePairs(EmployeesDbContext.EmployeeEntities);
+            EmployeesDbContext.maxDaysEntity = _employeeManager.FindPairWithLogestWorkTime(EmployeesDbContext.CommonProjectEntities);
             return Task.FromResult(EmployeesDbContext.maxDaysEntity);
                 
         }
 
         public Task<List<CommonProjectEntity>?> GetCommonProjectPairs()
         {           
-            return Task.FromResult(_commonProject.FindAllCommonProjectsOfaPair(EmployeesDbContext.maxDaysEntity, EmployeesDbContext.CommonProjectEntities));
+            return Task.FromResult(_employeeManager.FindAllCommonProjectsOfaPair(EmployeesDbContext.maxDaysEntity, EmployeesDbContext.CommonProjectEntities));
 
         }
     }
